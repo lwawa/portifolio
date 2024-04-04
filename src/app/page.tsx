@@ -2,6 +2,7 @@ import Head from 'next/head';
 import MainCard from './components/MainCard';
 import React from "react";
 import CardKnoledge from "./components/CardKnoledge";
+import ProjectCard from './components/CardProject';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
@@ -79,8 +80,30 @@ const Home: React.FC = () => {
       <MainCard>
         <div className="text-center">
           <h2 className="text-2xl lg:text-3xl font-bold mb-8">Projetos</h2>
+          <div className="flex flex-wrap justify-center">
+            <ProjectCard
+              title="Threejs - Customização de sapatos"
+              description="Software desenvolvido por mim durante meu período como desenvolvedor. Produzido enquanto aprendia three.js, foi feito em HTML, 
+              CSS e JavaScript padrão. O conceito do projeto é auxiliar no design de tênis, permitindo que as informações sobre cores em sua versão final
+              pudessem ser enviadas para a loja para confecção. Além disso, o protótipo conta com o uso de alguns conceitos de rotação do objeto 3D."
+              imageUrl="/treejs.png"
+              deployLink='https://threejs-shoes.vercel.app/'
+              githubLink='https://github.com/lwawa/threejsShoes'
+            />
+            <ProjectCard
+              title="Flet - App financeiro"
+              description="App feito para desafiar meus conhecimentos em python, utilizando um framework que eu não era familiarizado. Comecei meu estudo sobre
+              o framework integrando python e flutter para a criação de um app financeiro, possiblitando cadastrar os icones dos yahoo finance com nomes para identificação
+              para ser possivel a visualização dos valores de ações da bolsa e criptomoedas. Infelizmente o vercel não possui suporte ao framework o que impossibilitou o deploy
+              do projeot no presente momento."
+              imageUrl="/flet.png"
+              deployLink=''
+              githubLink='https://github.com/lwawa/criptoView'
+            />
+          </div>
         </div>
       </MainCard>
+
 
       <MainCard>
         <div className="text-center">
