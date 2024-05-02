@@ -100,6 +100,15 @@ const Home: React.FC = () => {
               deployLink=''
               githubLink='https://github.com/lwawa/criptoView'
             />
+            <ProjectCard
+              title="Angular/Nest - Aplicação de cadastro"
+              description="Aplicação de consumo de banco de dados, produzida para trabalhar com uma API também desenvolvida por mim objetivando demonstrar meus conhecimentos
+              de backend, juntamente com o consumo de uma API de cps. A aplicação consiste em um cadastro de usuários, onde é possível cadastrar, editar, excluir e visualizar
+              os usuários cadastrados. A aplicação foi desenvolvida em Angular, utilizando o framework Nest para o desenvolvimento da API."
+              imageUrl="/angular.png"
+              deployLink='https://rest-angular-cadastro.vercel.app/'
+              githubLink='https://github.com/lwawa/RestAngularCadastro'
+            />
           </div>
         </div>
       </MainCard>
